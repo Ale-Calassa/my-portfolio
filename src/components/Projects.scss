@@ -1,0 +1,58 @@
+@import '../styles/variables';
+
+.projetos-container {
+  font-family: $font-texto;
+  background-color: $cor-fundo2;
+  border-radius: 0.5rem;
+  padding: 70px 40px 60px;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.projetos-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: $cor-primaria;
+}
+
+.projeto-card .projeto-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.projeto-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.projeto-card:hover {
+  transform: translateY(-5px);
+}
+
+.projeto-card h3 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.projeto-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.projeto-card a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #00bcd4;
+  font-weight: bold;
+}

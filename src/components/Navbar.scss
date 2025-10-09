@@ -1,0 +1,30 @@
+@import '../styles/variables';
+@import '../styles/reset';
+
+.navbar {
+  font-family: $font-texto;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #000425;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #00bcd4;
+}

@@ -1,0 +1,68 @@
+@import '../styles/variables';
+
+.certificates-container {
+  font-family: $font-texto;
+  padding: 100px 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.certificates-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: $cor-primaria;
+}
+
+.certificates-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.cert-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 320px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+}
+
+.cert-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cert-info {
+  padding: 20px;
+}
+
+.cert-info h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: $cor-primaria;
+}
+
+.cert-info .inst_p {
+  margin: 0.2rem;
+  padding: 0.2rem;
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.cert-info .desc_p {
+  margin: 0.2rem;
+  padding: 0.2rem;
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,72 @@
+@import '../styles/variables';
+
+.about-container {
+  font-family: $font-texto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 100px 35px 40px;
+  margin: 0 auto;
+  gap: 40px
+}
+
+.about-left {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.about-img {
+  width: 250px;
+  height: 325px;
+  object-fit: cover;
+  border-radius: 35%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-nome {
+  margin-top: 15px;
+  font-size: 1.8rem;
+  color: #010033;
+}
+
+.about-right {
+  flex: 2;
+  margin: -25px;
+  min-width: 300px;
+}
+
+.about-right h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.about-right p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.about-right .about-welcome {
+  color: #333;
+  font-weight: bolder;
+}
+
+.btn-curriculo {
+  display: inline-block;
+  padding: 0.75rem 1.8rem;
+  background-color: #007bff;
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-curriculo:hover {
+  background-color: #0056b3; 
+}

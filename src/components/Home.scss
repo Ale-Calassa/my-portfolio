@@ -1,0 +1,93 @@
+@import '../styles/mixins';
+@import '../styles/variables';
+@import '../styles/components';
+@import '../styles/globals';
+@import '../styles/reset';
+
+.home-container {
+  font-family: $font-texto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: $cor-fundo2;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin: 0;
+
+  @include responsive(768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.home-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  .profile-image {
+    margin: 5rem;
+    padding: 0.2rem;
+    width: 400px;
+    height: auto;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+}
+
+.home-right {
+  align-items: center;
+  flex: 1;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .name {
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: $cor-primaria;
+  }
+
+  .python {
+    width: 30px;
+    height: auto;
+  }
+  
+  .tecname {
+    color: $cor-secundaria;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .typing {
+    font-size: clamp(1rem, 2vw, 2rem);
+    color: $cor-texto;
+    margin-top: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid $cor-texto;
+    width: 0;
+    animation: typing 6s steps(30, end) infinite, blink 0.7s step-end infinite;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 59%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

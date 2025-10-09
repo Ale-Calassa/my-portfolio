@@ -1,0 +1,15 @@
+// Estilos globais
+body {
+  background-color: $cor-fundo;
+  font-family: $fonte-padrao;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: $fonte-codigo;
+}

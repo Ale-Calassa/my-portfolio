@@ -1,0 +1,29 @@
+// Estilos compartilhados entre componentes
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $espacamento-padrao;
+}
+
+a {
+  color: $cor-primaria;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  background-color: $cor-primaria;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($cor-primaria, 10%);
+  }
+}
