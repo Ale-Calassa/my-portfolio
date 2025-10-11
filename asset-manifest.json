@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.4489aa29.css",
-    "main.js": "/my-portfolio/static/js/main.7b466283.js",
+    "main.css": "/my-portfolio/static/css/main.6961a06e.css",
+    "main.js": "/my-portfolio/static/js/main.f3a412a7.js",
     "static/media/office.png": "/my-portfolio/static/media/office.3a26d3a2cb3b48d9f97b.png",
     "static/media/imgIdeia.jpg": "/my-portfolio/static/media/imgIdeia.06dae9aaa8cee11fc1ed.jpg",
     "static/media/ColetadeDadosVendas.png": "/my-portfolio/static/media/ColetadeDadosVendas.1b4ace3a1c6132e31648.png",
@@ -11,11 +11,11 @@
     "static/media/DecolaTech.jpg": "/my-portfolio/static/media/DecolaTech.2591e39c98239264b9b7.jpg",
     "static/media/LibrasBasicoII.jpeg": "/my-portfolio/static/media/LibrasBasicoII.b0b74eb8dbb75adde2e0.jpeg",
     "index.html": "/my-portfolio/index.html",
-    "main.4489aa29.css.map": "/my-portfolio/static/css/main.4489aa29.css.map",
-    "main.7b466283.js.map": "/my-portfolio/static/js/main.7b466283.js.map"
+    "main.6961a06e.css.map": "/my-portfolio/static/css/main.6961a06e.css.map",
+    "main.f3a412a7.js.map": "/my-portfolio/static/js/main.f3a412a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.4489aa29.css",
-    "static/js/main.7b466283.js"
+    "static/css/main.6961a06e.css",
+    "static/js/main.f3a412a7.js"
   ]
 }
