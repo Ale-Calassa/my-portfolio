@@ -58,7 +58,7 @@
 .btn-curriculo {
   display: inline-block;
   padding: 0.75rem 1.8rem;
-  background-color: #007bff;
+  background-color: $btn-background;
   color: #fff;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1rem;
@@ -68,5 +68,5 @@
 }
 
 .btn-curriculo:hover {
-  background-color: #0056b3; 
+  background-color: $btn-hover; 
 }

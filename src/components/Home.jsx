@@ -11,7 +11,9 @@ const Home = () => {
       <div className="home-right">
         <h1 className="name">Alesson S. Calaça</h1>
         <p className="tecname">👨🏽‍💻 Python Developer & Data Analyst 📊</p>
+        <div>
         <p className="typing">Bem-vindo ao meu portifólio</p>
+        </div>
       </div>
     </div>
   );

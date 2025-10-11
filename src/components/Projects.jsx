@@ -20,26 +20,26 @@ const projects = [
   },
   {
     titulo: "Calculadora",
-    descricao: "API em Python para validação e exibição de certificados.",
+    descricao: "Uma calculadora simples e funcional desenvolvida com React no frontend e FastAPI no backend. Permite realizar operações básicas de matemática — soma, subtração, multiplicação e divisão — com exibição do resultado e armazenamento em cache dos últimos 5 cálculos realizados.",
+    link: "https://github.com/Ale-Calassa",
+    imagem: imgIdeia
+  },
+    {
+    titulo: "Mario Jump",
+    descricao: "...",
     link: "https://github.com/alesson/api-certificados",
     imagem: imgIdeia
   },
     {
-    titulo: "E-commerce",
-    descricao: "API em Python para validação e exibição de certificados.",
-    link: "https://github.com/alesson/api-certificados",
+    titulo: "Cluster - Docker Swarm - Vagrant",
+    descricao: "Este projeto tem como objetivo criar um Cluster Docker Swarm local utilizando máquinas virtuais provisionadas com Vagrant, automatizando a configuração de ambiente para desenvolvedores e evitando implementações manuais.",
+    link: "https://github.com/Ale-Calassa/dio-proj-cluster-vagrant-docker",
     imagem: imgIdeia
   },
     {
-    titulo: "API de Documentos",
-    descricao: "API em Python para validação e exibição de certificados.",
-    link: "https://github.com/alesson/api-certificados",
-    imagem: imgIdeia
-  },
-    {
-    titulo: "API Banco",
-    descricao: "API em Python para validação e exibição de certificados.",
-    link: "https://github.com/alesson/api-certificados",
+    titulo: "API...",
+    descricao: "...",
+    link: "https://github.com/Ale-Calassa",
     imagem: imgIdeia
   }
 ];

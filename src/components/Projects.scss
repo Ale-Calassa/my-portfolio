@@ -2,7 +2,6 @@
 
 .projetos-container {
   font-family: $font-texto;
-  background-color: $cor-fundo2;
   border-radius: 0.5rem;
   padding: 70px 40px 60px;
   margin: 1.5rem auto;
@@ -53,6 +52,6 @@
 .projeto-card a {
   font-size: 1.3rem;
   text-decoration: none;
-  color: #00bcd4;
+  color: $btn-background;
   font-weight: bold;
 }
