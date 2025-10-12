@@ -1,65 +1,80 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Projects.scss';
-import ColetadeDadosVendas from '../img/ColetadeDadosVendas.png'
-import imgIdeia from '../img/imgIdeia.jpg'
+import { motion } from 'framer-motion';
+import ColetadeDadosVendas from '../img/ColetadeDadosVendas.png';
+import amigosecreto from '../img/amigosecreto.png';
+import calculadora from '../img/calculadora.jpeg';
+import mariojump from '../img/mariojump.png';
+import vagrant from '../img/vagrant.png';
+import imgIdeia from '../img/imgIdeia.jpg';
 
-
-const projects = [
+const allProjects = [
   {
-    titulo: "Sistema de Coleta de Dados - Vendas",
-    descricao: "Registro de Vendas – Aplicação Didática (React + Flask + MySQL) Projeto fullstack desenvolvido com foco em aprendizado prático. A aplicação permite o registro de vendas fictícias por meio de um formulário React, que envia os dados para uma API Flask. As informações são armazenadas em um banco MySQL e simulam um cenário real de coleta e análise de consumo.",
+    titulo: "Sistema de Coleta de Dados – Vendas",
+    descricao: "Aplicação fullstack com React, Flask e MySQL para registrar e analisar vendas fictícias.",
     link: "https://ale-calassa.github.io/Formulario-Coleta-de-Dados-Vendas/",
     imagem: ColetadeDadosVendas
-    
   },
   {
     titulo: "Projeto Amigo Secreto",
-    descricao: "Aplicação web interativa desenvolvida para facilitar a organização de sorteios de amigo secreto. O sistema permite o cadastro de participantes, exibição dinâmica da lista e realização de sorteios aleatórios com apenas um clique. A interface foi projetada para ser intuitiva, responsiva e acessível em diferentes dispositivos.",
+    descricao: "Sistema web para organizar sorteios de amigo secreto com cadastro e sorteio automático.",
     link: "https://ale-calassa.github.io/amigo-secreto/",
-    imagem: imgIdeia
+    imagem: amigosecreto
   },
   {
     titulo: "Calculadora",
-    descricao: "Uma calculadora simples e funcional desenvolvida com React no frontend e FastAPI no backend. Permite realizar operações básicas de matemática — soma, subtração, multiplicação e divisão — com exibição do resultado e armazenamento em cache dos últimos 5 cálculos realizados.",
+    descricao: "Calculadora com React e FastAPI que realiza operações básicas e armazena os últimos cálculos.",
     link: "https://github.com/Ale-Calassa",
-    imagem: imgIdeia
+    imagem: calculadora
   },
-    {
-    titulo: "Mario Jump",
-    descricao: "...",
-    link: "https://github.com/alesson/api-certificados",
-    imagem: imgIdeia
-  },
-    {
+  {
     titulo: "Cluster - Docker Swarm - Vagrant",
-    descricao: "Este projeto tem como objetivo criar um Cluster Docker Swarm local utilizando máquinas virtuais provisionadas com Vagrant, automatizando a configuração de ambiente para desenvolvedores e evitando implementações manuais.",
+    descricao: "Ambiente automatizado com Vagrant para criar clusters locais usando Docker Swarm.",
     link: "https://github.com/Ale-Calassa/dio-proj-cluster-vagrant-docker",
-    imagem: imgIdeia
+    imagem: vagrant
   },
-    {
+  {
+    titulo: "Mario Jump",
+    descricao: "Projeto em desenvolvimento com temática inspirada em jogos, focado em interatividade.",
+    link: "https://github.com/Ale-Calassa",
+    imagem: mariojump
+  },
+  {
     titulo: "API...",
-    descricao: "...",
+    descricao: "Projeto de API em construção, voltado para integração e testes de backend.",
     link: "https://github.com/Ale-Calassa",
     imagem: imgIdeia
   }
 ];
 
 const Projects = () => {
+  const [expandido, setExpandido] = useState(null);
+
   return (
     <div className="projetos-container">
       <h2>Projetos</h2>
+
       <div className="projetos-grid">
-        {projects.map((projeto, index) => (
-          <div key={index} className="projeto-card">
-          <img src={projeto.imagem} alt={projeto.nome} className="projeto-img" />
-            <div>
+        {allProjects.map((projeto, index) => (
+          <motion.div
+            key={index}
+            className="projeto-card"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: index * 0.1 }}
+            onClick={() => setExpandido(expandido === index ? null : index)}
+          >
+            <img src={projeto.imagem} alt={projeto.titulo} className="projeto-img" />
             <h3>{projeto.titulo}</h3>
-            <p>{projeto.descricao}</p>
-            <a href={projeto.link} target="_blank" rel="noopener noreferrer">
-              Ver Projeto
-            </a>
-            </div>
-          </div>
+            {expandido === index && (
+              <>
+                <p>{projeto.descricao}</p>
+                <a href={projeto.link} target="_blank" rel="noopener noreferrer">
+                  Ver Projeto
+                </a>
+              </>
+            )}
+          </motion.div>
         ))}
       </div>
     </div>

@@ -2,10 +2,10 @@
 
 .projetos-container {
   font-family: $font-texto;
-  border-radius: 0.5rem;
-  padding: 70px 40px 60px;
-  margin: 1.5rem auto;
+  padding: 70px 20px;
+  margin: 0 auto;
   text-align: center;
+  max-width: 1200px;
 }
 
 .projetos-container h2 {
@@ -14,44 +14,80 @@
   color: $cor-primaria;
 }
 
-.projeto-card .projeto-img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 .projetos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
 .projeto-card {
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    color: #222;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #555;
+    margin: 15px 0;
+  }
+
+  a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: $btn-background;
+    font-weight: bold;
+  }
+
+  .projeto-img {
+    width: 100%;
+    height: 180px; // altura fixa para padronizar
+    object-fit: cover; // mantém proporção sem distorcer
+    object-position: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      filter: brightness(0.9);
+    }
+  }
 }
 
-.projeto-card:hover {
-  transform: translateY(-5px);
-}
+@media (max-width: 600px) {
+  .projetos-container h2 {
+    font-size: 2rem;
+  }
 
-.projeto-card h3 {
-  margin-bottom: 10px;
-  color: #222;
-}
+  .projeto-card {
+    padding: 15px;
 
-.projeto-card p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 15px;
-}
+    h3 {
+      font-size: 1.1rem;
+    }
 
-.projeto-card a {
-  font-size: 1.3rem;
-  text-decoration: none;
-  color: $btn-background;
-  font-weight: bold;
+    p {
+      font-size: 0.95rem;
+    }
+
+    a {
+      font-size: 0.95rem;
+    }
+
+    .projeto-img {
+      height: 140px; // altura menor para telas pequenas
+    }
+  }
 }
