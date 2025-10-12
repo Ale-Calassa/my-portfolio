@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.6961a06e.css",
-    "main.js": "/my-portfolio/static/js/main.f3a412a7.js",
+    "main.css": "/my-portfolio/static/css/main.2367effd.css",
+    "main.js": "/my-portfolio/static/js/main.cde550a0.js",
     "static/media/office.png": "/my-portfolio/static/media/office.3a26d3a2cb3b48d9f97b.png",
     "static/media/imgIdeia.jpg": "/my-portfolio/static/media/imgIdeia.06dae9aaa8cee11fc1ed.jpg",
     "static/media/ColetadeDadosVendas.png": "/my-portfolio/static/media/ColetadeDadosVendas.1b4ace3a1c6132e31648.png",
@@ -10,12 +10,16 @@
     "static/media/FormDocker.jpg": "/my-portfolio/static/media/FormDocker.a68f233ad5b1676346ce.jpg",
     "static/media/DecolaTech.jpg": "/my-portfolio/static/media/DecolaTech.2591e39c98239264b9b7.jpg",
     "static/media/LibrasBasicoII.jpeg": "/my-portfolio/static/media/LibrasBasicoII.b0b74eb8dbb75adde2e0.jpeg",
+    "static/media/vagrant.png": "/my-portfolio/static/media/vagrant.dbd765f6b862d2e38c87.png",
+    "static/media/calculadora.jpeg": "/my-portfolio/static/media/calculadora.a956d405774bddf77a3f.jpeg",
+    "static/media/mariojump.png": "/my-portfolio/static/media/mariojump.171be1f55db99f24da75.png",
+    "static/media/amigosecreto.png": "/my-portfolio/static/media/amigosecreto.5402798a1908545a3082.png",
     "index.html": "/my-portfolio/index.html",
-    "main.6961a06e.css.map": "/my-portfolio/static/css/main.6961a06e.css.map",
-    "main.f3a412a7.js.map": "/my-portfolio/static/js/main.f3a412a7.js.map"
+    "main.2367effd.css.map": "/my-portfolio/static/css/main.2367effd.css.map",
+    "main.cde550a0.js.map": "/my-portfolio/static/js/main.cde550a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.6961a06e.css",
-    "static/js/main.f3a412a7.js"
+    "static/css/main.2367effd.css",
+    "static/js/main.cde550a0.js"
   ]
 }
