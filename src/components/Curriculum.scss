@@ -78,12 +78,40 @@ li {
 /* Links externos */
 a[target="_blank"] {
   font-weight: bold;
+
+  &:hover {
+    color: #0400d3;
+  }
 }
+
+.curriculum-download {
+  margin-top: 1rem;
+  text-align: center;
+
+  button {
+    background-color: #dbdbdb;
+    color: #0064cf;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background-color: #00c6ff;
+      color: #fff;
+    }
+  }
+}
+
 
 /* Responsivo */
 @media (max-width: 600px) {
   body {
     padding: 1rem;
+    
   }
 
   header h1 {

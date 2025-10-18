@@ -2,29 +2,91 @@
 @import '../styles/reset';
 
 .navbar {
-  font-family: $font-texto;
-  font-size: 1.2rem;
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem;
   background-color: #000425;
   color: white;
   position: fixed;
-  width: 100%;
   top: 0;
-  z-index: 1000;
-  box-sizing: border-box;
   left: 0;
   right: 0;
+  width: 100%;
+  z-index: 1000;
+
+  &__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo img {
+    height: 50px;
+    width: auto;
+    border-radius: 8px;
+  }
+
+  &__links {
+    display: flex;
+    gap: 2rem;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #00bcd4;
+      }
+    }
+  }
+
+  &__toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+    .bar {
+      width: 25px;
+      height: 2px;
+      background-color: white;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+  }
 }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
+// Responsividade 
+@media (max-width: 768px) {
+  .navbar__links {
+    position: absolute;
+    top: 80px;
+    right: 0.1rem;
+    background-color: #000425;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.8rem;
+    border-radius: 8px;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 
-.navbar a:hover {
-  color: #00bcd4;
+    a {
+      padding: 0.1rem 0;
+      width: 100%;
+    }
+
+    &.open {
+      display: flex;
+    }
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .navbar__links a {
+    font-size: 1rem;
+  }
 }
