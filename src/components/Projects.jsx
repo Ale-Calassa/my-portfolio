@@ -24,7 +24,7 @@ const allProjects = [
   {
     titulo: "Calculadora",
     descricao: "Calculadora com React e FastAPI que realiza operações básicas e armazena os últimos cálculos.",
-    link: "https://github.com/Ale-Calassa",
+    link: "https://ale-calassa.github.io/calculator-frontend/",
     imagem: calculadora
   },
   {
