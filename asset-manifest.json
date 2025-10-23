@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.65286575.css",
-    "main.js": "/my-portfolio/static/js/main.2dcaa139.js",
-    "static/media/office.png": "/my-portfolio/static/media/office.3a26d3a2cb3b48d9f97b.png",
+    "main.css": "/my-portfolio/static/css/main.5c627487.css",
+    "main.js": "/my-portfolio/static/js/main.527003a9.js",
     "static/media/imgIdeia.jpg": "/my-portfolio/static/media/imgIdeia.06dae9aaa8cee11fc1ed.jpg",
+    "static/media/geminipic.png": "/my-portfolio/static/media/geminipic.55e9d3741317de77823f.png",
     "static/media/ColetadeDadosVendas.png": "/my-portfolio/static/media/ColetadeDadosVendas.1b4ace3a1c6132e31648.png",
-    "static/media/imgAle.png": "/my-portfolio/static/media/imgAle.958719ea4cee681f985a.png",
+    "static/media/myself.png": "/my-portfolio/static/media/myself.ae5dcb16e0303305053c.png",
     "static/media/PythonFundamentals.jpg": "/my-portfolio/static/media/PythonFundamentals.ba4f2a5deb7cc3c33085.jpg",
     "static/media/FormDocker.jpg": "/my-portfolio/static/media/FormDocker.a68f233ad5b1676346ce.jpg",
     "static/media/Curriculum2025.pdf": "/my-portfolio/static/media/Curriculum2025.8d3a6f19269efab691cb.pdf",
@@ -17,11 +17,11 @@
     "static/media/amigosecreto.png": "/my-portfolio/static/media/amigosecreto.5402798a1908545a3082.png",
     "static/media/Adelphoslogo.png": "/my-portfolio/static/media/Adelphoslogo.779bad2b8d3687c193cd.png",
     "index.html": "/my-portfolio/index.html",
-    "main.65286575.css.map": "/my-portfolio/static/css/main.65286575.css.map",
-    "main.2dcaa139.js.map": "/my-portfolio/static/js/main.2dcaa139.js.map"
+    "main.5c627487.css.map": "/my-portfolio/static/css/main.5c627487.css.map",
+    "main.527003a9.js.map": "/my-portfolio/static/js/main.527003a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.65286575.css",
-    "static/js/main.2dcaa139.js"
+    "static/css/main.5c627487.css",
+    "static/js/main.527003a9.js"
   ]
 }
