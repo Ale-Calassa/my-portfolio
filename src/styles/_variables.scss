@@ -15,3 +15,11 @@ $fonte-codigo: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospac
 
 // Espaçamento
 $espacamento-padrao: 1rem;
+
+// Breakpints Responsive
+$breakpoints: (
+  "desktop": 1024px,
+  "tablet": 768px,
+  "mobile": 480px
+);
+

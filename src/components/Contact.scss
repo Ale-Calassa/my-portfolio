@@ -1,4 +1,5 @@
 @import '../styles/variables';
+@import '../styles/mixins';
 
 .contato-container {
   padding: 50px 20px 60px;
@@ -7,18 +8,38 @@
   border-radius: 1rem;
   max-width: 800px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+
+  @include responsive-device("mobile") {
+    padding: 40px 15px;
+  }
 }
 
 .contato-container h2 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
   color: $cor-primaria;
+
+  @include responsive-device("tablet") {
+    font-size: 2.2rem;
+  }
+
+  @include responsive-device("mobile") {
+    font-size: 1.8rem;
+  }
 }
 
 .contato-container p {
   font-size: 1.3rem;
- color: $cor-primaria;
+  color: $cor-primaria;
   margin-bottom: 2.5rem;
+
+  @include responsive-device("tablet") {
+    font-size: 1.1rem;
+  }
+
+  @include responsive-device("mobile") {
+    font-size: 1rem;
+  }
 }
 
 .redes-links {
@@ -26,6 +47,10 @@
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+
+  @include responsive-device("mobile") {
+    gap: 20px;
+  }
 }
 
 .rede-item {
@@ -47,5 +72,19 @@
 
   .icon {
     font-size: 1.5rem;
+
+    @include responsive-device("mobile") {
+      font-size: 1.2rem;
+    }
+  }
+
+  @include responsive-device("tablet") {
+    font-size: 1.1rem;
+    padding: 8px 12px;
+  }
+
+  @include responsive-device("mobile") {
+    font-size: 1rem;
+    padding: 6px 10px;
   }
 }

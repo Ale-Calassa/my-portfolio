@@ -1,12 +1,12 @@
 import React from 'react';
 import './Home.scss';
-import mecambly from '../img/office.png';
+import geminipic from '../img/geminipic.png';
 
 const Home = () => {
   return (
     <div className="home-container">
       <div className="home-left">
-        <img src={mecambly} alt="Alesson" className="profile-image" />
+        <img src={geminipic} alt="Alesson" className="profile-image" />
       </div>
       <div className="home-right">
         <h1 className="name">Alesson S. Calaça</h1>

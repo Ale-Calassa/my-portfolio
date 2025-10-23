@@ -1,6 +1,6 @@
 import React from "react";
 import './About.scss';
-import imgAle from '../img/imgAle.png';
+import myself from '../img/myself.png';
 
 import { Link } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className="about-container">
       <div className="about-left">
-        <img src={imgAle} alt="Alesson-img" className="about-img" />
+        <img src={myself} alt="Alesson-img" className="about-img" />
         <h3 className="about-nome">Alesson S Calaça</h3>
       </div>
       <div className="about-right">

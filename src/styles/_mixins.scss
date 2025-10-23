@@ -6,8 +6,8 @@
 }
 
 // Responsividade
-@mixin responsive($breakpoint) {
-  @media (max-width: $breakpoint) {
+@mixin responsive-device($device) {
+  @media (max-width: map-get($breakpoints, $device)) {
     @content;
   }
 }
