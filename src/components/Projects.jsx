@@ -6,7 +6,7 @@ import amigosecreto from '../img/amigosecreto.png';
 import calculadora from '../img/calculadora.jpeg';
 import mariojump from '../img/mariojump.png';
 import vagrant from '../img/vagrant.png';
-import imgIdeia from '../img/imgIdeia.jpg';
+import JupyterNotebook from '../img/JupyterNotebook.png';
 
 const allProjects = [
   {
@@ -41,9 +41,9 @@ const allProjects = [
   },
   {
     titulo: "Jupyter Notebook - Ambiente de Desenvolvimento Python",
-    descricao: "Projeto estruturado para a prática intensiva de programação em Python, utilizando notebooks interativos como plataforma principal. O objetivo é consolidar fundamentos da linguagem, aplicar conceitos de ciência de dados, automação e algoritmos, além de desenvolver projetos autorais que envolvem análise de dados, visualização, manipulação de estruturas e integração com bibliotecas.",
+    descricao: "Projeto estruturado para a prática intensiva de programação em Python, utilizando notebooks interativos como plataforma principal. O objetivo é consolidar fundamentos da linguagem, aplicar conceitos de programação, ciência de dados, IA(Machine Learning) e automação, além de trabalhar em projetos autorais, manipulação de estruturas e integração com bibliotecas.",
     link: "https://github.com/Ale-Calassa/python-exercises",
-    imagem: imgIdeia
+    imagem: JupyterNotebook
   }
 ];
 
