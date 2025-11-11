@@ -40,9 +40,9 @@ const allProjects = [
     imagem: mariojump
   },
   {
-    titulo: "API...",
-    descricao: "Projeto de API em construção, voltado para integração e testes de backend.",
-    link: "https://github.com/Ale-Calassa",
+    titulo: "Jupyter Notebook - Ambiente de Desenvolvimento Python",
+    descricao: "Projeto estruturado para a prática intensiva de programação em Python, utilizando notebooks interativos como plataforma principal. O objetivo é consolidar fundamentos da linguagem, aplicar conceitos de ciência de dados, automação e algoritmos, além de desenvolver projetos autorais que envolvem análise de dados, visualização, manipulação de estruturas e integração com bibliotecas.",
+    link: "https://github.com/Ale-Calassa/python-exercises",
     imagem: imgIdeia
   }
 ];
