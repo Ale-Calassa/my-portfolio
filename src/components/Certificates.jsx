@@ -11,28 +11,30 @@ const certificates = [
     nome: "Decola Tech 2024",
     instituicao: "DIO - Digital Innovation One",
     data: "Janeiro 2024",
-    descricao: "Aprendizado da linguagem C# e .Net",
+    titulo: "Bootcamp de .NET e C# (73h) com foco em:",
+    descricao: "Fundamentos de programação e lógica computacional; Programação orientada a objetos em C#; Desenvolvimento de aplicações com .NET; Versionamento de código com Git/GitHub; Projetos práticos aplicados ao mercado",
     imagem: DecolaTech
   },
   {
     nome: "Formação Python Fundamentals",
     instituicao: "DIO - Digital Innovation One",
     data: "Julho 2025",
-    descricao: "Aprendizado da Linguagem Python desde o básico até orientação a objeto",
+    titulo: "Formação em Python com foco em:",
+    descricao: "Aprendizado da linguagem Python desde o básico; Estruturas de dados; Funções e módulos; Programação orientada a objetos; Boas práticas e projetos práticos",
     imagem: PythonFundamentals
   },
   {
     nome: "Sistemas Relacionais DataBase",
     instituicao: "DIO - Digital Innovation One",
     data: "Setembro 2025",
-    descricao: "Modulo em MySQL sobre sistemas relacionais",
+    descricao: "Módulo em MySQL sobre sistemas relacionais",
     imagem: SistemasRelacionaisDB
   },
   {
     nome: "Libras Básico II",
     instituicao: "Centro Municipal de Formação dos Servidores do Jaboatão dos Guararapes",
     data: "Novembro 2024",
-    descricao: "Curso de Lingua bresileira de sinais básico 2, vocabulario mais especifico e formação de sentenças.",
+    descricao: "Curso de Língua Brasileira de Sinais básico 2, vocabulário mais específico e formação de sentenças.",
     imagem: LibrasBasicoII
   },
   {
@@ -56,10 +58,10 @@ const Certificates = () => {
             <div className="cert-info">
               <h3>{cert.nome}</h3>
               <p className="inst_p">
-                <strong>
-                  {cert.instituicao}
-                </strong> <br /> {cert.data}
+                <strong>{cert.instituicao}</strong> <br /> {cert.data}
               </p>
+              {/* Renderiza o título se existir */}
+              {cert.titulo && <h4 className="cert-titulo">{cert.titulo}</h4>}
               <p className="desc_p">{cert.descricao}</p>
             </div>
           </div>
